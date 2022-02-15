@@ -1,0 +1,12 @@
+<%= form_with model: @place do |form| %>
+  <p>
+    <%= form.label "Place name"%>
+    <%= form.text_field "name" %>
+    </p>
+    <p>
+    <%= form.label "Date of Visit"%>
+    <%= form.text_field "visit_date" %>
+     </p>
+  <%= form.submit %>
+<% end %>
+    
