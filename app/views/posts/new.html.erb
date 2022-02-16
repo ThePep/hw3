@@ -1,3 +1,5 @@
+<h1>New Post<h1>
+
 <%= form_with model: @post do |form| %>
   <p>
     <%= form.label "title", "Title name" %>
@@ -11,6 +13,6 @@
     <%= form.label "Description" %>
     <%= form.text_field "description" %>
      </p>
-     <%= form.hidden_field "place_id" %>
+     <%= form.hidden_field "place_id" 
   <%= form.submit %>
 <% end %>
