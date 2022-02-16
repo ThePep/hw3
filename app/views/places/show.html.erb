@@ -1,0 +1,11 @@
+<h1><%= @place.name %></h1>
+<h2><%= @place.date %>
+<h3>Posts</h3>
+<ul>
+    <% for post in @place.post%>
+    <li> <%= post.name %> </li>
+    <li> <%= post.visit_date %> </li>
+    <li> <%= post.description %> </li>
+    <% end %>
+<p>
+    <a href="/places">Go back to all companies</a>

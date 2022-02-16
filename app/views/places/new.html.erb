@@ -1,11 +1,11 @@
 <%= form_with model: @place do |form| %>
   <p>
-    <%= form.label "Place name"%>
+    <%= form.label "name", "Location Name" %>
     <%= form.text_field "name" %>
     </p>
     <p>
-    <%= form.label "Date of Visit"%>
-    <%= form.text_field "visit_date" %>
+    <%= form.label "date", "Date of Trip"%>
+    <%= form.text_field "date" %>
      </p>
   <%= form.submit %>
 <% end %>
